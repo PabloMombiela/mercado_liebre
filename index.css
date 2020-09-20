@@ -1,0 +1,44 @@
+header {
+    background-color: #EAC926;
+    ;
+}
+
+h1 {
+    background-color: #ebebeb;
+    ;
+    font-size: 24px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 12px;
+}
+
+#descuento {
+    color: #39b54a;
+    font-size: 16px;
+}
+
+#camion {
+    color: #39b54a;
+}
+
+#precio {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#descripciones {
+    font-size: 16px;
+}
+
+#iconospiepagina {
+    color: #03264C;
+}
+
+#links {
+    font-weight: bold;
+}

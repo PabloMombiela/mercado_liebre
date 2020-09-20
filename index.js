@@ -22,10 +22,7 @@ app.get('/', function (req, res) {
 
 app.get('/index.css', function (req, res) {
 
-    let file = path.resolve('style/index.css')
+    let file = path.resolve('index.css')
     res.sendFile(file)
 
 })
-
-
-
