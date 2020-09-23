@@ -9,10 +9,10 @@ app.listen(3030, () => {
 })
 
 
-app.use (express.static ( __dirname +'/public')) 
+app.use(express.static(__dirname + '/public'))
 
 
-app.get('/', function (req, res) {
+app.get('/', function(req, res) {
 
     let file = path.resolve('index.html')
     res.sendFile(file)
@@ -20,9 +20,21 @@ app.get('/', function (req, res) {
 
 });
 
-app.get('/index.css', function (req, res) {
+app.get('/index.css', function(req, res) {
 
     let file = path.resolve('index.css')
     res.sendFile(file)
 
+})
+
+app.get('/register', function(req, res) {
+
+    let file = path.resolve('register.html')
+    res.sendFile(file)
+})
+
+app.get('/login', function(req, res) {
+
+    let file = path.resolve('login.html')
+    res.sendFile(file)
 })

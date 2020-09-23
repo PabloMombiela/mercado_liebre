@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="/"> <img src="images/logo-mercado-liebre.svg" width="100%" alt="logo ML"></a>
+
+        <p>Barra de Busqueda</p>
+        <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        <nav>
+            <ul>
+                <li><a id="links" href="#">Ofertas</a></li>
+                <li><a id="links" href="#">Tiendas Oficiales</a></li>
+                <li><a id="links" href="#">Vender</a></li>
+                <li><a id="links" href="#">Ayuda</a></li>
+                <br>
+                <li><a id="links" href="#">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a id="links" href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a id="links" href="#">Mis Compras <i class="fas fa-shopping-bag"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="/" method="GET">
+
+        <label for="nombreyapellido"></label>
+        <input placeholder="Nombre y Apellido" type="text" name="nomyape" id="nombreyapellido">
+
+        <label for="nombredeusuario"></label>
+        <input placeholder="Nombre de Usuari@" type="email" name="nomuser" id="nombredeusuario"><br>
+
+        <label for="email"></label>
+        <input placeholder="Email" type="email" name="email" id="email"><br>
+
+        <label for="nacimiento"></label>
+        <input placeholder="Fecha de Nacimiento" type="number" name="nacimiento" id="nacimiento"><br>
+
+        <label for="domicilio"></label>
+        <input placeholder="Domicilio" type="text" name="domicilio" id="domicilio"><br>
+
+        <h2>Perfil de usuario</h2>
+
+        <p><input type="radio" name="compraovende?" id="escomprador">Comprador
+            <input type="radio" name="compraovende?" id="esvendedor">Vendedor</p>
+
+        <h3>Intereses</h3>
+
+
+        <input type="checkbox" name="catdeinteres" value="electro"> Electro
+        <input type="checkbox" name="catdeinteres" value="moda"> Moda
+        <input type="checkbox" name="catdeinteres" value="hogar"> Hogar
+        <input type="checkbox" name="catdeinteres" value="jugueteria"> Juguetería
+        <input type="checkbox" name="catdeinteres" value="vida sana"> Vida sana
+
+        <h3>Elegí tu foto de usuario</h3>
+        <input type="file" name="archivoadjunto" value="archivoadjunto"><br><br><br>
+
+        <label for="contraseña"></label>
+        <input placeholder="Elegí tu contraseña" type="password" name="contraseña" id="contraseña"><br>
+
+        <label for="confircontraseña"></label>
+        <input placeholder="Confirma tu contraseña" type="password" name="confircontraseña" id="confircontraseña"><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+</body>
+<footer>
+    <br>
+    <i id="iconospiepagina" class="fas fa-credit-card"></i>
+    <h3>Pagá con tarjeta o en efectivo</h3>
+    <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es seguro!</p>
+    <br>
+    <i id="iconospiepagina" class="fas fa-gift"></i>
+    <h3>Envío gratis desde los $ 2.500</h3>
+    <p> Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos.</p>
+    <br>
+    <i id="iconospiepagina" class="fas fa-user-shield"></i>
+    <h3>Seguridad, de principio a fin</h3>
+    <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre prtegid@.</p>
+    <br>
+
+
+
+    <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
+</footer>
+</form>
+
+</html>
