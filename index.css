@@ -1,16 +1,124 @@
 header {
     background-color: #EAC926;
-    ;
-}
-
-h1 {
-    background-color: #ebebeb;
-    ;
-    font-size: 24px;
+    height: 200px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: gainsboro;
+    margin: 0px;
+    padding: 0px;
+}
+
+.barradebusqueda {
+    width: 50%;
+}
+
+.contenedormenu {
+    text-align: center;
+}
+
+.infodelmenu {
+    visibility: hidden;
+}
+
+#menu {
+    height: 30px;
+    width: 30px;
+    background-color: #0044aa;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#menu:hover {
+    background-color: #0022aa;
+    cursor: pointer;
+}
+
+#banner {
+    width: 100%;
+}
+
+.titulossecciones {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 90%;
+    text-align: center;
+}
+
+.articulos {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.piedepagina {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.articulospiepagina {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulopie {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.descripcionpiepagina {
+    color: black;
+}
+
+.estilocampologin {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.estilofechanaci {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: white;
+}
+
+.estilobotonenviar {
+    color: white;
+    width: 100%;
+    background-color: #0044AA;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.estilobotonreset {
+    color: white;
+    width: 100%;
+    background-color: #AA0044;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.estilobotonreset:active {
+    background: #CC1155;
 }
 
 p {
