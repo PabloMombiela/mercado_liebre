@@ -3,41 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ofertas</title>
+    <title>Login</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <a href="/"><img class="logo-ML" src="images/logo-mercado-liebre.svg" width="50%" alt="logo ML"></a>
-        <div>
-            <form action="index.html">
-                <input class="barradebusqueda" type="search" name="barradebusqueda" id="search" placeholder="Buscar productos, marcas">
-                <button type="submit">
+        <div class="contenedor-menulogo">
+            <div class="logo">
+                <a href="/"><img class="logo-ml" src="images/logo-mercado-liebre.svg" alt="logo ML"></a>
+            </div>
+            <div class="busqueda">
+                <form action="index.html">
+                    <input class="barradebusqueda" type="search" name="barradebusqueda" id="search" placeholder="Buscar productos, marcas">
+                    <button type="submit">
                 <i class="fas fa-search"></i>
         
                 </button>
-            </form>
+                </form>
+            </div>
         </div>
-        <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-        <div class="contenedormenu">
-            <i class="fas fa-bars" id="menu"></i>
-        </div>
-        <nav class="infodelmenu">
-            <ul>
-                <li> <a href="*">Ofertas</a></li>
-                <li> <a href="*">Tiendas Oficiales</a></li>
-                <li> <a href="*">Vender</a></li>
-                <li> <a href="*">Ayuda</a></li>
-                </br>
-                <li> <a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
-                <li> <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li> <a href="*">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
+        <p class="parrafo-header"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+
+        <nav class="nav">
+            <div class="contenedor-hamburguesa">
+                <i class="fas fa-bars hamburguesa"></i>
+
+
+                <ul class="links">
+                    <li> <a href="*">Ofertas</a></li>
+                    <li> <a href="*">Tiendas Oficiales</a></li>
+                    <li> <a href="*">Vender</a></li>
+                    <li> <a href="*">Ayuda</a></li>
+                    </br>
+                    <li> <a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+                    <li> <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li> <a href="*">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+
+
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
+    <main class="margin-tp20">
         <form action="/" method="GET">
             <p>
                 <label for="nombreuser"></label>
@@ -76,7 +85,7 @@
         </article>
 
         <div>
-            <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
+            <p class="copyright">Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
         </div>
     </footer>
 </body>

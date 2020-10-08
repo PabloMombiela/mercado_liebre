@@ -1,30 +1,63 @@
-header {
-    background-color: #EAC926;
-    height: 200px;
+* {
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: gainsboro;
+    background-color: #d3d3d3;
     margin: 0px;
     padding: 0px;
 }
 
-.barradebusqueda {
+
+/* HEADER */
+
+header {
+    background-color: #EAC926;
+}
+
+.contenedor-menulogo {
+    display: flex;
+}
+
+.logo {
     width: 50%;
 }
 
-.contenedormenu {
+.busqueda {
+    width: 50%;
+}
+
+.barradebusqueda {
+    width: 95%;
+    height: 61px;
+    padding: 6px;
+    border: solid 2px black;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.parrafo-header {
+    font-size: 30px;
     text-align: center;
 }
 
-.infodelmenu {
-    visibility: hidden;
+
+/* nav */
+
+.contenedor-hamburguesa {
+    text-align: center;
 }
 
-#menu {
-    height: 30px;
-    width: 30px;
+.contenedor-hamburguesa:hover .links {
+    display: block;
+}
+
+.hamburguesa {
+    height: 40px;
+    width: 40px;
     background-color: #0044aa;
     color: white;
     font-size: 20px;
@@ -32,55 +65,99 @@ body {
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: block;
+    cursor: pointer;
 }
 
-#menu:hover {
-    background-color: #0022aa;
-    cursor: pointer;
+.links {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+ul :visited {
+    color: black;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
 }
 
 #banner {
     width: 100%;
 }
 
+
+/* SECCIONES */
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
 .titulossecciones {
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 90%;
-    text-align: center;
+    font-size: 45px;
+    margin-left: 15px;
 }
 
 .articulos {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 15px;
     background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.piedepagina {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: white;
+.articulos:hover #nombre-producto {
+    display: block;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
-.articulospiepagina {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.img-articulos {
+    height: auto;
+    width: 100%;
+    cursor: pointer;
 }
 
-.titulopie {
-    font-size: 16px;
+.pie-articulos {
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#camion {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 60%;
+    padding: 6px;
+    padding-top: 14px;
+    font-size: 20px;
+}
+
+#precio {
+    font-size: 18px;
     font-weight: bold;
+    width: 24%;
 }
 
-.descripcionpiepagina {
-    color: black;
+#descuento {
+    color: #39b54a;
+    font-size: 16px;
+    width: 70%;
 }
+
+#nombre-producto {
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+
+/* LOGIN REGISTER */
 
 .estilocampologin {
     width: 100%;
@@ -121,32 +198,71 @@ body {
     background: #CC1155;
 }
 
-p {
-    font-size: 12px;
-}
-
-#descuento {
-    color: #39b54a;
-    font-size: 16px;
-}
-
-#camion {
-    color: #39b54a;
-}
-
-#precio {
-    font-size: 18px;
+#links {
     font-weight: bold;
 }
 
-#descripciones {
-    font-size: 16px;
+.contenedor-compr-vend {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* footer */
+
+.piedepagina {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    text-align: center;
 }
 
 #iconospiepagina {
     color: #03264C;
+    font-size: 2em;
+    margin-bottom: 5px;
 }
 
-#links {
+.articulospiepagina {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulopie {
+    font-size: 16px;
     font-weight: bold;
+}
+
+.descripcionpiepagina {
+    color: black;
+}
+
+
+/*Prueba clases*/
+
+.margin-tp20 {
+    margin: 0 20px;
+}
+
+@media(min-width: 361px) {
+    .articulos {
+        width: 40%;
+        float: left;
+        margin: 0 5%;
+        margin-bottom: 20px;
+    }
+}
+
+section {
+    overflow: hidden;
+}
+
+@media(min-width:769px) {
+    .articulos {
+        width: 23%;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
 }
